@@ -1,4 +1,4 @@
-Object.prototype.isDivisibleBy = function (divisor) {
+Number.prototype.isDivisibleBy = function (divisor) {
     return this % divisor == 0;
 }
 
