@@ -12,6 +12,7 @@ function fizzbuzz(value) {
     {
         return "buzz";
     }
+
     return value.toString();
 }
 
