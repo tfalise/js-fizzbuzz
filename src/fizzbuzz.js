@@ -1,12 +1,16 @@
+Object.prototype.isDivisibleBy = function (divisor) {
+    return this % divisor == 0;
+}
+
 function fizzbuzz(value) {
     let result = "";
 
-    if(value % 3 == 0)
+    if(value.isDivisibleBy(3))
     {
         result += "fizz";
     }
 
-    if(value % 5 == 0)
+    if(value.isDivisibleBy(5))
     {
         result += "buzz";
     }
