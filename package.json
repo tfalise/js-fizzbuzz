@@ -4,6 +4,7 @@
   "description": "Javascript implementation of fizzbuzz kata",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "fizzbuzz": "node src/app.js"
   },
   "repository": {
