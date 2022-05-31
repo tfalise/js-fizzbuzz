@@ -1,0 +1,25 @@
+{
+  "name": "js-fizzbuzz",
+  "version": "1.0.0",
+  "description": "Javascript implementation of fizzbuzz kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tfalise/js-fizzbuzz.git"
+  },
+  "author": "Thibault Falise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tfalise/js-fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/tfalise/js-fizzbuzz#readme",
+  "dependencies": {
+    "jest": "^28.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1"
+  }
+}
