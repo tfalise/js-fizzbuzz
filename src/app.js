@@ -8,4 +8,11 @@ function main(n) {
 }
 
 let max = parseInt(process.argv[2]);
-main(max);
+
+if(isNaN(max)) {
+    console.log("Usage: npm run fizzbuzz N");
+    console.log("N should be a positive integer greater than 0.")
+}
+else {
+    main(max);
+}
