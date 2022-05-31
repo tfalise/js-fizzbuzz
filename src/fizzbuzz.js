@@ -1,19 +1,17 @@
 function fizzbuzz(value) {
-    if(value % 15 == 0) {
-        return "fizzbuzz";
-    }
-    
+    let result = "";
+
     if(value % 3 == 0)
     {
-        return "fizz";
+        result += "fizz";
     }
 
     if(value % 5 == 0)
     {
-        return "buzz";
+        result += "buzz";
     }
 
-    return value.toString();
+    return result != "" ? result : value.toString();
 }
 
 module.exports = fizzbuzz;
