@@ -1,5 +1,5 @@
 Number.prototype.isDivisibleBy = function (divisor) {
-    return this % divisor == 0;
+    return this % divisor === 0;
 }
 
 const divisorWords = {
@@ -16,7 +16,7 @@ function fizzbuzz(value) {
         }
     }
 
-    return result != "" ? result : value.toString();
+    return result !== "" ? result : value.toString();
 }
 
 module.exports = fizzbuzz;
