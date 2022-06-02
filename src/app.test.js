@@ -17,3 +17,9 @@ test('positive integer should be valid input', () => {
     expect(result.isValid).toBe(true);
     expect(result.value).toBe(4);
 });
+
+test('should truncate positive non integer numbers to integer value', () => {
+    let result = parseInput(4.7);
+    expect(result.isValid).toBe(true);
+    expect(result.value).toBe(4);
+});
