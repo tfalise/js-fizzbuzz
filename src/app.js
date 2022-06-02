@@ -32,8 +32,8 @@ if(!input.isValid) {
     console.log("N should be a positive integer greater than 0.")
 }
 else {
-    let result = main(input.value);
-    result.forEach(str => console.log(str));
+    main(input.value)
+        .forEach(str => console.log(str));
 }
 
 module.exports = { parseInput, main };
