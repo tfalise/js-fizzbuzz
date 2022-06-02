@@ -1,5 +1,17 @@
 const fizzbuzz = require('./fizzbuzz');
 
+function parseInput(value) {
+    let result = parseInt(value);
+
+    if(isNaN(value)) {
+        return { isValid: false };
+    }
+
+    if(result < 0) {
+        return { isValid: false };
+    }
+}
+
 function main(n) {
     for(let i = 1; i <= n; i++) {
         console.log(fizzbuzz(i));
@@ -15,3 +27,5 @@ if(isNaN(max) || max <= 0) {
 else {
     main(max);
 }
+
+module.exports = parseInput;
