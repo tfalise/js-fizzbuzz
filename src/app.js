@@ -3,11 +3,7 @@ const fizzbuzz = require('./fizzbuzz');
 function parseInput(value) {
     let result = parseInt(value);
 
-    if(isNaN(value)) {
-        return { isValid: false };
-    }
-
-    if(result <= 0) {
+    if(isNaN(value) || result <= 0) {
         return { isValid: false };
     }
 
