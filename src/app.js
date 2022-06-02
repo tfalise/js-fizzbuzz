@@ -7,9 +7,14 @@ function parseInput(value) {
         return { isValid: false };
     }
 
-    if(result < 0) {
+    if(result <= 0) {
         return { isValid: false };
     }
+
+    return {
+        isValid: true,
+        value: result
+    };
 }
 
 function main(n) {

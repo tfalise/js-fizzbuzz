@@ -7,3 +7,7 @@ test('NaN should not be valid input', () => {
 test('negative number should not be valid input', () => {
     expect(parseInput(-3).isValid).toBe(false);
 });
+
+test('zero should not be valid input', () => {
+    expect(parseInput(0).isValid).toBe(false);
+});
