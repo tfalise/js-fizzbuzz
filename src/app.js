@@ -18,19 +18,22 @@ function parseInput(value) {
 }
 
 function main(n) {
+    let result = [];
     for(let i = 1; i <= n; i++) {
-        console.log(fizzbuzz(i));
+        result.push(fizzbuzz(i));
     }
+    return result;
 }
 
-let max = parseInt(process.argv[2]);
+let input = parseInput(process.argv[2]);;
 
-if(isNaN(max) || max <= 0) {
+if(!input.isValid) {
     console.log("Usage: npm run fizzbuzz N");
     console.log("N should be a positive integer greater than 0.")
 }
 else {
-    main(max);
+    let result = main(input.value);
+    result.forEach(str => console.log(str));
 }
 
-module.exports = parseInput;
+module.exports = { parseInput, main };
